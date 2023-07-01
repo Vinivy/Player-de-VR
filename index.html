@@ -11,7 +11,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!--Scripts ion-icons-->
     <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <title>Player || VR</title>
   </head>
   <body>
@@ -22,7 +32,14 @@
           <ion-icon name="chevron-back"></ion-icon>
           <ion-icon name="chevron-forward"></ion-icon>
         </div>
-        <div class="adress-bar"></div>
+        <div class="adress-bar">
+          <div class="text">Aa</div>
+          <div class="rocket">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            rocketseat.com
+          </div>
+          <ion-icon name="refresh"></ion-icon>
+        </div>
         <div class="actions">
           <ion-icon name="share-outline"></ion-icon>
           <ion-icon name="add-outline"></ion-icon>
@@ -36,15 +53,8 @@
         <ion-icon name="search-outline"></ion-icon>
       </aside>
       <main class="screen">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/KT1PDX31qo8"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+        <div id="video"></div>
+        <div id="ambient-light"></div>
       </main>
       <footer>
         <div class="interaction">
@@ -53,13 +63,6 @@
         </div>
       </footer>
     </div>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    <script src="./Script.js"></script>
   </body>
 </html>
